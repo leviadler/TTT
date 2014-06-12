@@ -1,0 +1,93 @@
+body, h1, h2, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.group {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  padding: 15px;
+}
+
+.alert {
+  font-size: 20px;
+  color: #3498db;
+  background: #34495e;
+  display: block;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px auto;
+  width: 300px;
+  text-align: center;
+}
+
+ul {
+  height: 300px;
+  width: 300px;
+  border: 5px solid black;
+  margin: auto;
+}
+
+.grid > li {
+  display: block;
+  height: 90px;
+  width: 90px;
+  border: 5px solid black;
+  cursor: pointer;
+  float: left;
+  background: gray;
+}
+
+.grid > li:hover {
+  background: #AAA;
+  border: 5px solid yellow;
+}
+
+.grid > li.x:after {
+  content: "X";
+  padding-left: 14px;
+}
+
+.grid > li.x {
+  font-size: 85px;
+  background-color: #2ecc71;
+}
+
+.grid > li.x:hover {
+  border: 5px solid black;
+  cursor: default;
+}
+
+.grid > li.o:hover {
+  border: 5px solid black;
+  cursor: default;
+}
+
+.grid > li.o {
+  font-size: 85px;
+  background-color: #e74c3c;
+  color: white;
+}
+
+.grid > li.o:after {
+  content: "O";
+  font-size: 85px;
+  padding-left: 11px;
+}
+
