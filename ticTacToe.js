@@ -1,5 +1,3 @@
-// NB: This doesn't include any AI.
-
 (function (root) {
 
   var TTT = root.TTT = (root.TTT || {});
@@ -143,39 +141,4 @@
     })
   }
 
-  // Game.prototype.run = function () {
-  //   var game = this;
-  // 
-  //   game.turn(function(){
-  //     if (game.winner()) {
-  //       console.log("Someone won!");
-  //       READER.close();
-  //     } else {
-  //       game.printBoard();
-  //       game.run();
-  //     }
-  //   });
-  // }
-
-  // Game.prototype.turn = function (callback) {
-  //   var game = this;
-  // 
-  //   READER.question("Enter coordinates like [row,column]: ",function(strCoords){
-  //     var coords = eval(strCoords); // Totally insecure way to parse the string "[1,2]" into the array [1,2].
-  //     if (game.valid(coords)) {
-  //       game.move(coords);
-  //       callback();
-  //     } else {
-  //       console.log("Invalid coords!");
-  //       game.turn(callback);
-  //     }
-  //   });
-  //}
 })(this);
-
-
-// First we instantiate a new object with the this.TTT.Game() constructor function.
-// var TTT = new this.TTT.Game();
-
-// Then we enter the game's run loop.
-// TTT.run();
