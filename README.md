@@ -1,5 +1,4 @@
 #Tic Tac Joe
-===
 
 jQuery Tic Tac Toe game with a slick interface
 
